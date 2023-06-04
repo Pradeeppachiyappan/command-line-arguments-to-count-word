@@ -20,8 +20,8 @@ Use len to count number of words.
 
 ## PROGRAM:
 ```
-#program is developed: AJAY ASWIN
-# REF.NO: 22009241
+#program is developed: P.Pradeep Raj
+# REF.NO: 212222240073
 import sys
 count= 0
 with open(sys.argv[1],'r') as file:
