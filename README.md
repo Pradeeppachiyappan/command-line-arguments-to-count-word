@@ -32,15 +32,19 @@ Register no: 212222240073
 ```
 import sys
 fp=open(sys.argv[1],'r')
-count=0
-for line in fp:
-    list1=line.split()
-    count+=len(list1)
-print("Number of words in a file",count)
+d={}
+for i in fp:
+   for w in i.split():
+      if w in not in d.keys():
+         d[w]-1
+      else:
+         d[w]+=1
+print(d)
 ```
 
 ### OUTPUT:
-![exp 5b 1](https://github.com/Safeeq-Fazil/command-line-arguments-to-count-word/assets/118680361/e0035d15-b63b-4fbc-b871-1261ab94da89)
+![comm](https://github.com/Pradeeppachiyappan/command-line-arguments-to-count-word/assets/118707347/013fd726-7beb-47f4-ae10-ce38e551af67)
+
 ![exp 5b 2](https://github.com/Safeeq-Fazil/command-line-arguments-to-count-word/assets/118680361/eae3274c-db7f-4a66-b5bf-e6b0c2fd525e)
 ![exp 5b 3](https://github.com/Safeeq-Fazil/command-line-arguments-to-count-word/assets/118680361/0de14d9f-08f3-4db3-8548-8b64e6eaf468)
 
